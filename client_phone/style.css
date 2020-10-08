@@ -1,0 +1,13 @@
+body
+{
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+    height: 800px;  
+    justify-content: space-between;
+}
+button
+{
+    height: 50%;
+    width: 50%;
+}
