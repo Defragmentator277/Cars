@@ -1,17 +1,22 @@
 // import io from 
 window.onload = () => 
 {
-    this.socket = io();
+    let socket = io();
     //left arrow
     document.getElementById('up').onclick = () => 
     {
         console.log('up');
-        this.socket.emit('upPress');
+        socket.emit('upPress');
     }
     //right arrow
     document.getElementById('down').onclick = () => 
     {
         console.log('down');
-        this.socket.emit('downPress');
+        socket.emit('downPress');
+    }
+    //status button
+    document.getElementById('status').onclick = () => 
+    {
+        socket.emit('statusPress', 'nothing');
     }
 } 
